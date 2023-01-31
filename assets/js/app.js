@@ -40,6 +40,7 @@ function validarFormulario(e) {
 
         agregarEmpleado();
         GuardarBd();
+        
     }
 }
 
@@ -78,20 +79,6 @@ const editarDB = (actividad) =>{
     GuardarBd();
 
 }
-
-const EliminarBd =(actividad) => {
-    let indexArray;
-    listaEmpleados.forEach((elemento,index) =>{
-
-    if(elemento.actividad === actividad)
-    indexArray = index
-
-    })
-
-    listaEmpleados.splice(indexArray,1);
-    GuardarBd();
-}
-
 
 const PintarDB =() =>{
 
@@ -193,6 +180,7 @@ function editarEmpleado() {
     limpiarHTML();
     mostrarEmpleados();
     formulario.reset();
+    
 
     formulario.querySelector('button[type="submit"]').textContent = 'Agregar';
     
@@ -200,16 +188,20 @@ function editarEmpleado() {
 }
 
 function eliminarEmpleado(id) {
-    EliminarBd();
+    
     listaEmpleados = listaEmpleados.filter(empleado => empleado.id !== id);
     limpiarHTML();
     mostrarEmpleados();
+    localStorage.removeItem(listaEmpleados);
+    GuardarBd();
 }
 
 function limpiarHTML() {
+    
     const divEmpleados = document.querySelector('.div-empleados');
     while(divEmpleados.firstChild) {
         divEmpleados.removeChild(divEmpleados.firstChild);
         
     }
+
 }
