@@ -8,7 +8,7 @@
 body {
     background-color:white;
 }
-
+/*indice*/
 .inicio{
     display: flex;
     background-color: black;
@@ -21,11 +21,10 @@ body {
     color: white;
 }
 
-
-
+/*fin indice*/
 
 .div-titulo {
-    border: 1px solid red ;
+
     width: 100%;
     height: 100px;
     display: flex;
@@ -34,12 +33,10 @@ body {
 }
 
 .div-titulo h1 {
-    border: 1px solid blue;
     font-weight: 300;
 }
 
 .contenedor {
-    border: 1px solid purple;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -48,7 +45,7 @@ body {
 
 /* ESTILOS FORMULARIO */
 .contenedor .div-formulario {
-    border: 1px solid black;
+
     width: 90%;
     height: 250px;
     margin: 15px 15px;
@@ -58,11 +55,11 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+   
 }
 
 .contenedor .div-formulario h2 {
-    border: solid 1px green;
+
     margin-top: 10px;
     font-weight: 300;
     font-size: 2em;
@@ -70,7 +67,7 @@ body {
 }
 
 .contenedor .div-formulario form {
-    border: 1px solid red;
+
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -79,14 +76,14 @@ body {
 }
 
 .contenedor .div-formulario form input{
-    border: 1px solid red;
+
     width: 100%;
     padding: 10px 10px;
     margin: 10px 10px;
     display: flex;
 }
 .contenedor .div-formulario form button {
-    border: 1px solid red;
+
     width: 20%;
     padding: 10px 10px;
     margin: 10px 10px;
@@ -119,7 +116,6 @@ body {
 
 /*agregaran los nombres*/
 .contenedor .div-listado .div-empleados {
-    border: solid 1px   purple;
     width: 100%;
     height: 100%;
     display: flex;
