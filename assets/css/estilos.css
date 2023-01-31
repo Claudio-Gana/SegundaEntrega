@@ -9,7 +9,17 @@ body {
     background-color:white;
 }
 
-
+.inicio{
+    display: flex;
+    background-color: black;
+    height: 10%;
+}
+.inicio a{
+    margin: 1%;
+    text-decoration: none;
+    margin-left: 10%;
+    color: white;
+}
 
 
 
@@ -144,4 +154,27 @@ hr {
 
 .btn-eliminar {
     background-color: red;
+}
+
+
+.final{
+    display: flex;
+    background-color: black;
+}
+.final ul{
+    width: 40%;
+    text-decoration: none;
+}
+.final ul li{
+    margin: 5%;
+}
+.final ul li a{
+    text-emphasis: none;
+    color: white;
+}
+.final p{
+    margin-left: 4%;;
+    width: 40%; 
+    color: white;
+    margin: 5%;
 }
